@@ -2,26 +2,32 @@
 <html>
     <head>
         <title>Launch Checklist</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
         <script src = "script.js"></script>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <h1>Launch Checklist Form</h1>
-        <div id="missionTarget">
-            <!-- Fetch some planetary data -->
-        </div> 
+        <div id="missionTargetOutside">
+            <div id="missionTarget">
+                <!-- Fetch some planetary data -->
+            </div> 
+            <button id="planetPicker">Random New Planet</button>
+        </div>
         <div id="launchForm">
             <form>
-                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
+                <div style="display:flex; flex-direction: row; justify-content: left; align-items: right; margin: 8 0;">
                     <label>Pilot Name <input type="text" name="pilotName" id="pilotName"/></label>
                 </div>
-                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
+                <div style="display:flex; flex-direction: row; justify-content: left; align-items: center; margin: 8 0;">
                     <label>Co-pilot Name <input type="text" name="copilotName"/></label>
                 </div>
-                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
+                <div style="display:flex; flex-direction: row; justify-content: left; align-items: center; margin: 8 0;">
                     <label>Fuel Level (L) <input type="text" name="fuelLevel"/></label> 
                 </div>
-                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
+                <div style="display:flex; flex-direction: row; justify-content: left; align-items: center; margin: 8 0;">
                     <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
                 </div>
                 <button id="formSubmit">Submit</button>
@@ -31,10 +37,10 @@
             <h2 id="launchStatus">Awaiting Information Before Launch</h2>
             <div  id="faultyItems">
                 <ol>
-                    <li id="pilotStatus">Pilot Ready</li>
-                    <li id="copilotStatus">Co-pilot Ready</li>
+                    <li id="pilotStatus">Pilot not ready</li>
+                    <li id="copilotStatus">Co-pilot not ready</li>
                     <li id="fuelStatus">Fuel level high enough for launch</li>
-                    <li id="cargoStatus">Cargo mass low enough for launch</li>
+                    <li id="cargoStatus">Cargo mass not defined.</li>
                 </ol>
             </div>
         </div>    

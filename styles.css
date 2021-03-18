@@ -1,3 +1,16 @@
+:root{
+    --backgColor: #ecf0f1bb;
+}
+body{
+    background-image: url(./images/sbasaf.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    background-size: 70%;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
 h1 {
     text-align: center;
 }
@@ -7,24 +20,27 @@ div {
 }
 
 #faultyItems {
-    visibility: hidden;   
+    visibility: hidden;  
 }
 
 #launchForm {
-    background-color: #ECF0F1;
+    background-color: var(--backgColor);
     text-align: center;
     margin: auto;
     width: 25%;
-    border: 3px solid black;
+    border: .5px solid rgba(0, 0, 0, 0.247);
+    border-radius: 15px;
     padding: 10px;
 }
 
 #launchStatusCheck {
-    background-color: #ECF0F1;
+    background-color: var(--backgColor);
+    
     text-align: center;
     margin: 50px auto;
     width: 50%;
-    border: 3px solid black;
+    border: .5px solid rgba(0, 0, 0, 0.247);
+    border-radius: 15px;
     padding: 10px;
 }
 
@@ -34,20 +50,48 @@ div {
 }
 
 #missionTarget {
-    background-color: #ECF0F1;
+    /* background-color: var(--backgColor); */
     text-align: center;
-    margin: 50px auto;
-    width: 50%;
-    border: 3px solid black;
+    /* margin: 0 auto; */
+    height: 450px;
     padding: 10px;
+}
+#missionTargetOutside{
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    border: .5px solid rgba(0, 0, 0, 0.247);
+    border-radius: 20px;
+    background-color: var(--backgColor);
+    
+}
+#targets{
+    text-align: left;
+    width: 50%;
+    margin: auto;
 }
 
 button {
-    background-color: #419f6a;
-    border: none;
-    color: white;
-    border-radius: 8px;
+    transition: all .3s ease-in;
+    background-color: rgb(88, 146, 255);
+    border:1.5px solid rgba(107, 107, 107, 0);
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
     width: 25%;
     height: 30px;
     margin: 10px 0;
 }
+
+button:hover{
+    transition: all .3s ease-in;
+    background-color: rgb(112, 198, 255);
+    border:1.5px solid rgba(107, 107, 107, 0);
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 26%;
+    height: 30px;
+    margin: 10px 0;
+
+    }
