@@ -61,7 +61,7 @@ div {
     width: 50%;
     margin: 50px auto;
     border: .5px solid rgba(0, 0, 0, 0.247);
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: var(--backgColor);
     
 }
@@ -72,23 +72,23 @@ div {
 }
 
 button {
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
     background-color: rgb(88, 146, 255);
-    border:1.5px solid rgba(107, 107, 107, 0);
+    border:2px solid rgb(134, 196, 253);
     color: black;
-    font-weight: 500;
-    border-radius: 10px;
+    font-weight: 600;
+    border-radius: 30px;
     width: 25%;
     height: 30px;
     margin: 10px 0;
 }
 
 button:hover{
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
     background-color: rgb(112, 198, 255);
     border:1.5px solid rgba(107, 107, 107, 0);
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 10px;
     width: 26%;
     height: 30px;

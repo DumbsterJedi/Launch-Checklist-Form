@@ -78,7 +78,7 @@ window.addEventListener("load", function () {
       document.getElementById("launchStatus").style.color = "red";
     };
 
-    if (cargoMass.value <= 10000 && fuelLevel.value >= 10000 && cargoMass.value !== '') {
+    if (cargoMass.value <= 10000 && fuelLevel.value >= 10000 && cargoMass.value !== '' && pilotName.value !== '' && copilotName.value !== '') {
       document.getElementById("launchStatus").style.color = "Green";
       document.getElementById("launchStatus").innerHTML =
         "Shuttle is ready for launch.";
