@@ -1,16 +1,22 @@
 :root{
-    --backgColor: #ecf0f1bb;
+    --backgColor: #ecf0f1;
 }
 body{
-    background-image: url(./images/sbasaf.png);
+    /* background-image: url(./images/sbasaf.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center 100px;
-    background-size: 70%;
+    background-position: center 100px; */
     font-family: Roboto;
     font-weight: 300;
 }
-
+#coverBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#coverImg{
+    width: 60%;
+}
 h1 {
     text-align: center;
 }
@@ -75,7 +81,7 @@ button {
     transition: all .2s ease-in;
     background-color: rgb(88, 146, 255);
     border:2px solid rgb(134, 196, 253);
-    color: black;
+    color: rgb(0, 3, 156);
     font-weight: 600;
     border-radius: 30px;
     width: 25%;
